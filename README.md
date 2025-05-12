@@ -17,7 +17,7 @@ A personal portfolio website showcasing my skills, projects, and contact informa
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Libraries/Frameworks**:
   - Font Awesome ('6.5.1') for icons
-  - EmailJS ('4.x') for contact form functionality
+  - EmailJS for contact form functionality
 - **Tools**:
   - Git & GitHub for version control
   - VS Code for development
