@@ -1,14 +1,42 @@
 # Kanishk Jain Portfolio
-A personal portfolio website showcasing my skills, projects, and contact information.
+
+A personal portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript, this responsive site highlights my expertise in web development, UI/UX design, and programming.
+
+
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Project Structure](#project-structure)
+- [Live Demo](#live-demo)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
-- Responsive design
-- Projects section with live demos
-- Contact form
+- **Responsive Design**: Adapts seamlessly to desktops, tablets, and mobile devices.
+- **Interactive Navigation**: Smooth-scrolling navigation with a mobile-friendly hamburger menu.
+- **About Section**: Details my background, skills, experience, and education with interactive tabs.
+- **Projects Showcase**: Displays key projects (e.g., Weather App, Cleanliness Management Site) with descriptions and GitHub links.
+- **Contact Form**: Functional form integrated with EmailJS for direct communication.
+- **Social Media Links**: Connects to GitHub, LinkedIn, and WhatsApp for networking.
+- **Downloadable CV**: Provides a link to download my resume in PDF format.
+- **Modern UI/UX**: Features gradient animations, hover effects, and a clean, professional aesthetic.
 
-## Live Demo
-[Visit my portfolio](https://Kanishkjain0510.github.io/Portfolio)
+## Technologies Used
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Libraries/Frameworks**:
+  - Font Awesome ('6.5.1') for icons
+  - EmailJS ('4.x') for contact form functionality
+- **Tools**:
+  - Git & GitHub for version control
+  - VS Code for development
+- **Hosting**: GitHub Pages for live deployment
+- **Assets**: Custom images and resume PDF
 
 ## Setup
-1. Clone the repository: 'git clone https://github.com/Kanishkjain0510/Portfolio.git'
-2. Open `index.html` in a browser.
+To run the portfolio locally, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Kanishkjain0510/portfolio.git
