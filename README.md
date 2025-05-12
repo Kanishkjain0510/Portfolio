@@ -3,16 +3,6 @@
 A personal portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript, this responsive site highlights my expertise in web development, UI/UX design, and programming.
 
 
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Project Structure](#project-structure)
-- [Live Demo](#live-demo)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Features
 - **Responsive Design**: Adapts seamlessly to desktops, tablets, and mobile devices.
 - **Interactive Navigation**: Smooth-scrolling navigation with a mobile-friendly hamburger menu.
