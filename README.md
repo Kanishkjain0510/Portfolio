@@ -30,3 +30,6 @@ To run the portfolio locally, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Kanishkjain0510/portfolio.git
+
+2. **View my Portfolio Website**
+    https://kanishkjain0510.github.io/Portfolio/
