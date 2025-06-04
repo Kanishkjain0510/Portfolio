@@ -12,13 +12,30 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+// Mobile menu functionality
+const navMenu = document.getElementById("nav-menu");
+const menuIcon = document.querySelector(".fas.fa-bars");
+const closeIcon = document.querySelector(".fas.fa-times");
+
+function openmenu() {
+    navMenu.classList.add("active");
+    menuIcon.classList.add("active");
+    closeIcon.classList.add("active");
+}
+
+function closemenu() {
+    navMenu.classList.remove("active");
+    menuIcon.classList.remove("active");
+    closeIcon.classList.remove("active");
+}
+
 // Form submission with EmailJS
 const form = document.getElementById("contact-form");
 const msg = document.getElementById("msg");
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    emailjs.sendForm('service_p4ev0qe', 'template_h07xili', form, 'n46Q3KgNQmJPTHzjC')
+    emailjs.sendForm('service_p4ev0qe', 'template_h07xili', form, 'n46Q3KgNQmJPTHzjC') // Replace with your EmailJS service ID and template ID
         .then(() => {
             msg.innerHTML = "Message sent successfully";
             setTimeout(() => {
@@ -70,5 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Auto-activate Skills tab when navigating to About section
     document.querySelector('nav ul li a[href="#about"]').addEventListener('click', () => {
         setTimeout(() => opentab('Skills'), 100); // Delay to ensure smooth scroll
+    });
+
+    // Close menu when a nav link is clicked
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closemenu();
+        });
     });
 });
