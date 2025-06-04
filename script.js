@@ -8,17 +8,8 @@ function opentab(tabname) {
     for (tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    event.currentTarget.classList.add("active-link");
+    document.querySelector(`.tab-links[onclick="opentab('${tabname}')"]`).classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
-}
-
-// Side menu functionality
-var sidemenu = document.getElementById("sidemenu");
-function openmenu() {
-    sidemenu.style.right = "0";
-}
-function closemenu() {
-    sidemenu.style.right = "-200px";
 }
 
 // Form submission with EmailJS
@@ -27,8 +18,6 @@ const msg = document.getElementById("msg");
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
-    // Send email via EmailJS
     emailjs.sendForm('service_p4ev0qe', 'template_h07xili', form, 'n46Q3KgNQmJPTHzjC')
         .then(() => {
             msg.innerHTML = "Message sent successfully";
@@ -40,4 +29,46 @@ form.addEventListener('submit', e => {
             console.error('Failed to send email:', error);
             msg.innerHTML = "Failed to send message. Please try again.";
         });
+});
+
+// Scroll Animation and Loader
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    const services = document.querySelectorAll('.services-list > div');
+    const projects = document.querySelectorAll('.work');
+
+    services.forEach(service => observer.observe(service));
+    projects.forEach(project => observer.observe(project));
+
+    // Initialize Vanilla Tilt for project cards
+    VanillaTilt.init(document.querySelectorAll('.work'), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        'max-glare': 0.5
+    });
+
+    // Loader
+    const loader = document.createElement('div');
+    loader.id = 'loader';
+    loader.innerHTML = '<div class="loader-particle"></div>';
+    document.body.prepend(loader);
+
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 1500);
+    });
+
+    // Auto-activate Skills tab when navigating to About section
+    document.querySelector('nav ul li a[href="#about"]').addEventListener('click', () => {
+        setTimeout(() => opentab('Skills'), 100); // Delay to ensure smooth scroll
+    });
 });

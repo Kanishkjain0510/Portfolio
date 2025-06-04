@@ -6,26 +6,29 @@
     <title>Kanishk Jain Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 </head>
 <body>
-    <div id="header"> 
-          <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1><span>K</span>anishk <span>J</span>ain</h1>
-                </div>
-                <ul id="sidemenu">
-                    <!-- <li><a href="#header">Home</a></li> -->
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-          </div>
+   
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1><span>K</span>anishk <span>J</span>ain</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
     </div>
+</div>
 
     <!-- --------About---------- -->
     <div id="about">
@@ -95,45 +98,57 @@
             <p>As a full-stack developer, I offer a range of services 
                 to help bring your web projects to life. My expertise includes:</p>
                 <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Front-end devoloper</h2>
-                        <p>Creating responsive and user-friendly interfaces using HTML, CSS, and JavaScript. Also covering someparts of fullstack development, 
-                            including server-side programming and database management.</p>
-                        </p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-python"></i>
-                        <h2>Python</h2>
-                        <p>I work with Python to build clear and functional code for scripting, data processing, and simple 
-                            applications. I’m also comfortable applying core machine learning techniques to support small 
-                            projects or prototypes when needed.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-database"></i>
-                        <h2>Databases</h2>
-                        <p>I have expertise in designing and managing databases to store and retrieve information efficiently. 
-                            My skills include creating database schemas, optimizing queries
-                         for performance, and ensuring data integrity and security.</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-uncharted"></i>
-                        <h2>software engineer</h2>
-                        <p>
-                            Software Engineering
-                            I specialize in software engineering, focusing on developing scalable and robust applications.
-                             My expertise includes designing software architecture, implementing coding
-                             best practices, and ensuring high-quality, maintainable code.</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-pen-nib"></i>
-                        <h2>UI/UX Design</h2>
-                        <p>I design clean and user-centric interfaces, focusing on usability and accessibility.
-                            Experienced with tools like Figma and principles of user experience to create intuitive layouts and interactions.
-                        </p>
-                    </div>
+    <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Front-end Developer</h2>
+        <p>Creating responsive and user-friendly interfaces using HTML, CSS, and JavaScript. Also covering some parts of fullstack development, including server-side programming and database management.</p>
+        <div class="progress-container">
+            <div class="progress-circle" style="--progress: 85;">
+                <span>85%</span>
+            </div>
+        </div>
     </div>
+    <div>
+        <i class="fa-brands fa-python"></i>
+        <h2>Python</h2>
+        <p>I work with Python to build clear and functional code for scripting, data processing, and simple applications. I’m also comfortable applying core machine learning techniques to support small projects or prototypes when needed.</p>
+        <div class="progress-container">
+            <div class="progress-circle" style="--progress: 90;">
+                <span>90%</span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>Databases</h2>
+        <p>I have expertise in designing and managing databases to store and retrieve information efficiently. My skills include creating database schemas, optimizing queries for performance, and ensuring data integrity and security.</p>
+        <div class="progress-container">
+            <div class="progress-circle" style="--progress: 80;">
+                <span>80%</span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <i class="fa-brands fa-uncharted"></i>
+        <h2>Software Engineer</h2>
+        <p>I specialize in software engineering, focusing on developing scalable and robust applications. My expertise includes designing software architecture, implementing coding best practices, and ensuring high-quality, maintainable code.</p>
+        <div class="progress-container">
+            <div class="progress-circle" style="--progress: 75;">
+                <span>75%</span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>UI/UX Design</h2>
+        <p>I design clean and user-centric interfaces, focusing on usability and accessibility. Experienced with tools like Figma and principles of user experience to create intuitive layouts and interactions.</p>
+        <div class="progress-container">
+            <div class="progress-circle" style="--progress: 95;">
+                <span>95%</span>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </div>
 
@@ -143,7 +158,6 @@
         <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
                 <div class="work">
-                    <img src="./img/weather.png">
                     <div class="layer">
                         <h2><i>Live Weather App</i></h2>
                         <p>A simple weather app built with Python and Tkinter that uses the 
@@ -154,7 +168,6 @@
                     </div>
                     </div>
                     <div class="work">
-                        <img src="./img/broom.png">
                         <div class="layer">
                         <h2><i>Cleanliness Management Site</i></h2>
                         <p>Web app for college campus cleanliness with login/signup and role-based dashboards 
@@ -166,14 +179,13 @@
                     </div>
                     </div>
                     <div class="work">
-                        <img src="./img/cn.png">
+
                         <div class="layer">
                         <h2><i>TCP, UDP & QUIC Analysis</i></h2>
                         <p>Compared the performance of TCP, UDP & QUIC protocols in terms of throughoput, latency, connection setup time and packet loss using tools like iperf3 and aioquic</p>
                     </div>
                     </div>
                     <div class="work">
-                        <img src="./img/graph.png">
                         <div class="layer">
                         <h2><i>Basic Recommender System</i></h2>
                         <p>Python recommender system predicting user connections from CSV preference 
@@ -184,7 +196,6 @@
                     </div>
                     </div>
                     <div class="work">
-                        <img src="./img/tree.png">
                         <div class="layer">
                         <h2><i>Huffmann Encoding</i></h2>
                         <p>Python project implementing Huffman Coding for lossless data compression. 
@@ -237,5 +248,7 @@
     })();
 </script>
 <script src="script.js"></script>
+
+
 </body>
 </html>
