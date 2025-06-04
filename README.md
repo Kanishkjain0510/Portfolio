@@ -14,14 +14,14 @@ A personal portfolio website showcasing my skills, projects, and contact informa
 - **Modern UI/UX**: Features gradient animations, hover effects, and a clean, professional aesthetic.
 
 ## Technologies Used
-- **Frontend**: HTML5, CSS3, JavaScript
+- **Frontend**: HTML5, CSS3, JavaScript, Vanilla CSS
 - **Libraries/Frameworks**:
   - Font Awesome ('6.5.1') for icons
   - EmailJS for contact form functionality
 - **Tools**:
   - Git & GitHub for version control
   - VS Code for development
-- **Hosting**: GitHub Pages for live deployment
+- **Hosting**: GitHub Pages for live deployment & Netlify too
 - **Assets**: Custom images and resume PDF
 
 ## Setup
