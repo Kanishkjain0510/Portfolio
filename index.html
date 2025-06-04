@@ -8,35 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 </head>
 <body>
-   
-
-<div id="header">
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <h1><span>K</span>anishk <span>J</span>ain</h1>
-            </div>
-            <ul id="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-            <i class="fas fa-times" onclick="closemenu()" style="display: none;"></i>
-        </nav>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><span>K</span>anishk <span>J</span>ain</h1>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <i class="fas fa-times" onclick="closemenu()" style="display: none;"></i>
+            </nav>
+        </div>
     </div>
-</div>
 
-    <!-- --------About---------- -->
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./img/me.jpeg", alt="Kanishk Jain">
+                    <img src="./img/me.jpeg" alt="Kanishk Jain">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -50,30 +47,30 @@
                         digital realities. Through years of dedication, I've sharpened my expertise in both front-end 
                         and back-end development, becoming proficient in languages like HTML, CSS, JavaScript, Python, 
                         Java, and looking forward to further sharpen it</p>
+                    <div class="divider"></div> <!-- Added divider -->
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
-                                <li><b>Languages: </b> Python, HTML, CSS, JavaScript, C/C++, SQL, MongoDB.</li>
-                                <li><b>Frameworks/Libraries:</b> NodeJS, Bootstrap, Numpy, Pandas, Matplotlib, OpenCV, Tensorflow, NetworkX.</li>
-                                <li><b>Courses:</b> Data Structures and Algorithms, Machine Learning, Computer Networks, Digital Electronics, Computer Architecture, Principles of Programming Language.Python, Tkinter, GUI Development.</li>
-                                <li><b>Version Control:</b> Git, GitHub.</li>
+                            <li><b>Languages: </b> Python, HTML, CSS, JavaScript, C/C++, SQL, MongoDB.</li>
+                            <li><b>Frameworks/Libraries:</b> NodeJS, Bootstrap, Numpy, Pandas, Matplotlib, OpenCV, Tensorflow, NetworkX.</li>
+                            <li><b>Courses:</b> Data Structures and Algorithms, Machine Learning, Computer Networks, Digital Electronics, Computer Architecture, Principles of Programming Language.Python, Tkinter, GUI Development.</li>
+                            <li><b>Version Control:</b> Git, GitHub.</li>
                             <br>
                             <li><span><h4>Other Skills</h4></span>
-                          <br><i>Leadership Skills Planning, Event Management, Collaboration, Problem Solving, Communication, Time Management, Public Speaking, Presentation Skills, Critive & Critical Thinking.</i>
+                            <br><i>Leadership Skills Planning, Event Management, Collaboration, Problem Solving, Communication, Time Management, Public Speaking, Presentation Skills, Critive & Critical Thinking.</i>
                         </ul>
                     </div>
-                        <div class="tab-contents" id="Experience">
-                         <ul>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
                             <li><span><b>September 2023 - October 2023</b></span><br> <b>Quiz Event Coordinator, SABRANG’23 (Cultural Fest) </b><br>
                             <i>Coordinated General Knowledge Quiz Event in SABRANG’23 - The Cultural Fest, JK Lakshmipat University.</i></li>
                             <li><span><b>September 2023 - April 2024</b></span><br><b>Event Coordinator, Nakshatra club (Astronomy Club)</b></li>
                             <li><span><b>September 2023</b></span><br> <b>Volunteer, PRODYOGEEK'23 (Technical Fest)</b><br>
                             <i>Volunteered in Sponsorship & Promotion Team and Design in PRODYOGEEK’23 - The Technical Fest, JK Lakshmipat University</i></li>
-                            <!-- <li><span>Intern</span><br>App Devolopment</li> -->
                         </ul> 
                     </div>
                     <div class="tab-contents" id="Education">
@@ -81,83 +78,83 @@
                             <li><span><b>B.Tech. Computer Science & Artificial Intelligence</b></span>
                             <br><b>Institution :</b> JK Lakshmipat University
                             <br><b>Cgpa : 7.459</b><br>
-                             <b>Duration :</b> 2023-2027 <br></li>
+                            <b>Duration :</b> 2023-2027 <br></li>
                             <li><span><b>Visiting Student, B.Tech.</b></span>
                             <br><b>Institution :</b> IIT Jammu<br>
-                             <b>Duration :</b> January 2025 - May 2025 <br></li>
-                           
+                            <b>Duration :</b> January 2025 - May 2025 <br></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ---------Services--------- -->
+
+    <!-- Services Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My services</h1><br>
             <p>As a full-stack developer, I offer a range of services 
                 to help bring your web projects to life. My expertise includes:</p>
-                <div class="services-list">
-    <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>Front-end Developer</h2>
-        <p>Creating responsive and user-friendly interfaces using HTML, CSS, and JavaScript. Also covering some parts of fullstack development, including server-side programming and database management.</p>
-        <div class="progress-container">
-            <div class="progress-circle" style="--progress: 85;">
-                <span>85%</span>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Developer</h2>
+                    <p>Creating responsive and user-friendly interfaces using HTML, CSS, and JavaScript. Also covering some parts of fullstack development, including server-side programming and database management.</p>
+                    <div class="progress-container">
+                        <div class="progress-circle" style="--progress: 85;">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>I work with Python to build clear and functional code for scripting, data processing, and simple applications. I’m also comfortable applying core machine learning techniques to support small projects or prototypes when needed.</p>
+                    <div class="progress-container">
+                        <div class="progress-circle" style="--progress: 90;">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Databases</h2>
+                    <p>I have expertise in designing and managing databases to store and retrieve information efficiently. My skills include creating database schemas, optimizing queries for performance, and ensuring data integrity and security.</p>
+                    <div class="progress-container">
+                        <div class="progress-circle" style="--progress: 80;">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Software Engineer</h2>
+                    <p>I specialize in software engineering, focusing on developing scalable and robust applications. My expertise includes designing software architecture, implementing coding best practices, and ensuring high-quality, maintainable code.</p>
+                    <div class="progress-container">
+                        <div class="progress-circle" style="--progress: 75;">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design clean and user-centric interfaces, focusing on usability and accessibility. Experienced with tools like Figma and principles of user experience to create intuitive layouts and interactions.</p>
+                    <div class="progress-container">
+                        <div class="progress-circle" style="--progress: 95;">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div>
-        <i class="fa-brands fa-python"></i>
-        <h2>Python</h2>
-        <p>I work with Python to build clear and functional code for scripting, data processing, and simple applications. I’m also comfortable applying core machine learning techniques to support small projects or prototypes when needed.</p>
-        <div class="progress-container">
-            <div class="progress-circle" style="--progress: 90;">
-                <span>90%</span>
-            </div>
-        </div>
-    </div>
-    <div>
-        <i class="fa-solid fa-database"></i>
-        <h2>Databases</h2>
-        <p>I have expertise in designing and managing databases to store and retrieve information efficiently. My skills include creating database schemas, optimizing queries for performance, and ensuring data integrity and security.</p>
-        <div class="progress-container">
-            <div class="progress-circle" style="--progress: 80;">
-                <span>80%</span>
-            </div>
-        </div>
-    </div>
-    <div>
-        <i class="fa-brands fa-uncharted"></i>
-        <h2>Software Engineer</h2>
-        <p>I specialize in software engineering, focusing on developing scalable and robust applications. My expertise includes designing software architecture, implementing coding best practices, and ensuring high-quality, maintainable code.</p>
-        <div class="progress-container">
-            <div class="progress-circle" style="--progress: 75;">
-                <span>75%</span>
-            </div>
-        </div>
-    </div>
-    <div>
-        <i class="fa-solid fa-pen-nib"></i>
-        <h2>UI/UX Design</h2>
-        <p>I design clean and user-centric interfaces, focusing on usability and accessibility. Experienced with tools like Figma and principles of user experience to create intuitive layouts and interactions.</p>
-        <div class="progress-container">
-            <div class="progress-circle" style="--progress: 95;">
-                <span>95%</span>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
 
-<!-- ----------------portfolio--------------------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
                 <div class="work">
                     <div class="layer">
                         <h2><i>Live Weather App</i></h2>
@@ -167,9 +164,9 @@
                             temperature, and pressure in a clean, user-friendly interface.</p>
                         <a href="https://github.com/Kanishkjain0510/weather-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                    </div>
-                    <div class="work">
-                        <div class="layer">
+                </div>
+                <div class="work">
+                    <div class="layer">
                         <h2><i>Cleanliness Management Site</i></h2>
                         <p>Web app for college campus cleanliness with login/signup and role-based dashboards 
                             for students, staff, admins. Features responsive design, sidebar navigation, 
@@ -178,16 +175,15 @@
                             (frontend), Node.js, Express (backend), MySQL, bcrypt, JWT for security.</p>
                         <a href="https://github.com/Kanishkjain0510/College-Cleanliness-Management"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                    </div>
-                    <div class="work">
-
-                        <div class="layer">
+                </div>
+                <div class="work">
+                    <div class="layer">
                         <h2><i>TCP, UDP & QUIC Analysis</i></h2>
                         <p>Compared the performance of TCP, UDP & QUIC protocols in terms of throughoput, latency, connection setup time and packet loss using tools like iperf3 and aioquic</p>
                     </div>
-                    </div>
-                    <div class="work">
-                        <div class="layer">
+                </div>
+                <div class="work">
+                    <div class="layer">
                         <h2><i>Basic Recommender System</i></h2>
                         <p>Python recommender system predicting user connections from CSV preference 
                             data. Uses collaborative filtering with matrix factorization to analyze 
@@ -195,9 +191,9 @@
                             Ideal for social networking, matchmaking, or team formation.</p>
                         <a href="https://github.com/Kanishkjain0510/Recommender-system"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                    </div>
-                    <div class="work">
-                        <div class="layer">
+                </div>
+                <div class="work">
+                    <div class="layer">
                         <h2><i>Huffmann Encoding</i></h2>
                         <p>Python project implementing Huffman Coding for lossless data compression. 
                             Reads text, calculates character frequencies, builds a Huffman tree, 
@@ -205,14 +201,12 @@
                             on Huffman coding concepts.</p>
                         <a href="https://github.com/Kanishkjain0510/Huffman-Encoding"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                    </div>
-                    
                 </div>
-                <!-- <a href="#" class="btn">See more</a> -->
+            </div>
         </div>
     </div>
 
-    <!-- --------------------Contact---------------------- -->
+    <!-- Contact Section -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -223,9 +217,9 @@
                     <div class="social-icon">
                         <a href="https://wa.link/sr65n5"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://github.com/Kanishkjain0510"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kanishk-jain-a630b5286/"><i class="fa-brands fa-linkedin"></i>
-                 </div>
-                    <a href="img\resume.pdf" class="btn btn2">Download CV</a>
+                        <a href="https://www.linkedin.com/in/kanishk-jain-a630b5286/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/resume.pdf" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form id="contact-form" name="submit-to-google-sheet">
@@ -242,14 +236,13 @@
             <p>Made with <i class="fa-solid fa-heart"></i> by Kanishk Jain</p>
         </div>
     </div>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        emailjs.init("n46Q3KgNQmJPTHzjC"); // Replace with your Public Key
-    })();
-</script>
-<script src="script.js"></script>
-
-
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("n46Q3KgNQmJPTHzjC"); // Replace with your Public Key
+        })();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
