@@ -9,3 +9,8 @@ Thumbs.db
 
 # Node modules (if applicable)
 node_modules/
+# Local Netlify folder
+.netlify
+
+
+.env
